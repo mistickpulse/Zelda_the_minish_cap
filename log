@@ -1,0 +1,25 @@
+## log for  in /home/zouz/rendu/jeux/Zelda_the_minish_cap
+## 
+## Made by Zouz
+## Login   <fabian.le-maux@epitech.eu>
+## 
+## Started on  Tue Oct 11 19:10:03 2016 Zouz
+   Last update Tue Oct 11 19:46:00 2016 Zouz
+##
+
+log 0.0.1
+---------
+	Makefile added.
+	Inventory conception made
+	Principal menu conception made
+	Sprite added
+	Entities .h made for mobs and principal player
+	Repo prepared for code
+	     ---> Main loop etablished
+	     ---> main structure added
+	     ---> Interaction with keyboard initialised
+	     ---> Main menu code added
+	     ---> added main.c
+	lib zelda makefile added
+	     ---> No sources in
+	     
