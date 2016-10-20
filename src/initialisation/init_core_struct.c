@@ -5,7 +5,7 @@
 ** Login   <zouz@epitech.net>
 **
 ** Started on  Mon Sep 19 08:11:40 2016 Zouz
-** Last update Wed Sep 28 17:46:13 2016 Zouz
+** Last update Thu Oct 20 16:40:27 2016 Zouz
 */
 
 #include <stdlib.h>
@@ -48,5 +48,6 @@ t_core_struct		*init_core_struct(int size_x, int size_y)
       ((init_main_disp(to_return, ref_x, ref_y)) == EXIT_FAILURE))
     return (NULL);
   init_var(to_return);
+  to_return->sprite->sprite_intro = NULL;
   return (to_return);
 }
