@@ -5,7 +5,7 @@
 ** Login   <zouz@epitech.net>
 **
 ** Started on  Wed Sep 28 17:30:10 2016 Zouz
-** Last update Wed Sep 28 17:50:27 2016 Zouz
+** Last update Fri Oct 21 20:21:29 2016 Zouz
 */
 
 #include <stdlib.h>
@@ -40,5 +40,6 @@ int		init_menu(t_core_struct *core)
   if ((to_return->sprite_menu = init_sprite_menu()) == NULL)
     return (EXIT_FAILURE);
   core->sprites = to_return;
+  core->sprites->sprite_intro->intro = NULL;
   return (EXIT_SUCCESS);
 }

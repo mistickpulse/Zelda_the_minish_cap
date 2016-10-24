@@ -5,7 +5,7 @@
 ** Login   <zouz@epitech.net>
 **
 ** Started on  Mon Aug 22 20:18:58 2016 Zouz
-** Last update Sat Oct  1 20:30:03 2016 Zouz
+** Last update Mon Oct 24 04:13:39 2016 Zouz
 */
 
 #ifndef PLAYER_H_

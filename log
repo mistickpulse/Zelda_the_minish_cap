@@ -4,7 +4,7 @@
 ## Login   <fabian.le-maux@epitech.eu>
 ## 
 ## Started on  Tue Oct 11 19:10:03 2016 Zouz
-   Last update Tue Oct 11 20:36:57 2016 Zouz
+   Last update Mon Oct 24 04:45:11 2016 Zouz
 ##
 
 log 0.0.1
@@ -22,3 +22,14 @@ log 0.0.1
 	     ---> added main.c
 	lib zelda makefile added
 	     ---> No sources in
+
+log 0.0.2
+=========
+	Start animation made
+	save file (inventory part && quick_view profile made)
+	need to check-up resize_pixelarray && alpha
+	introduction cinematic started (sunshine rayon only) (need 2 apply alpha on)
+	core main_loop modified check_this up
+
+
+

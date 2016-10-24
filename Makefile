@@ -5,7 +5,7 @@
 ## Login   <fabian@epitech.net>
 ## 
 ## Started on  Tue Jun 21 20:18:39 2016 Zouz
-## Last update Wed Sep 28 17:45:03 2016 Zouz
+## Last update Sat Oct 22 04:01:36 2016 Zouz
 ##
 
 RCREAT =	mkdir
@@ -22,7 +22,7 @@ RM =		rm -f
 
 LIB_PATH =	lib/
 
-CFLAGS = 	-Llib -Iinclude
+CFLAGS = 	-L./lib -lgraph -Iinclude
 
 CFLAGS +=	-g3 -Wall -Wextra
 
@@ -35,20 +35,21 @@ LAPIN=		-L${HOME}/.froot/lib/ -llapin		\
 		-lsfml-system				\
 		-lstdc++ -ldl
 
-
-
-
-
 INIT = 		initialisation/init_core_struct
 
 
-LOOP =		loop/loop
+LOOP =		loop/loop			\
+
+ANIMATION=	animation/intro/intro		\
+		animation/fill_draw		\
+		animation/animation
+
+SRC=		draw				\
+
+KBRD =		keyboard/keyboard		\
 
 
-KBRD =		keyboard/keyboard
-
-
-OUT_GAME_MENU = out_game_menu/init_menu
+OUT_GAME_MENU = out_game_menu/init_menu		\
 
 
 SRCS_NAME =	main					\
@@ -56,6 +57,8 @@ SRCS_NAME =	main					\
 		$(INIT)					\
 		$(KBRD)					\
 		$(OUT_GAME_MENU)			\
+		$(ANIMATION)				\
+		$(SRC)
 
 
 
@@ -71,7 +74,7 @@ OBJS = 		$(SRCS:.c=.o)
 all: 		lib $(NAME)
 
 $(NAME): 	$(OBJS)
-		$(CC) -o $(NAME) $(OBJS) $(LAPIN) $(CFLAGS)
+		$(CC) -o $(NAME) $(OBJS) $(LDFLAGS) $(LAPIN) $(CFLAGS)
 
 lib: 
 		$(MAKE) -C $(LIB_PATH)

@@ -5,7 +5,7 @@
 ** Login   <fabian@epitech.net>
 **
 ** Started on  Sun Jun 12 00:20:39 2016 Zouz
-** Last update Mon Sep 26 17:37:09 2016 Zouz
+** Last update Sat Oct 22 03:05:06 2016 Zouz
 */
 
 #ifndef COLOR_H_
@@ -31,8 +31,5 @@
 # define END_SEQ "m"
 
 # define color(str) printf("%s%sm", SEQ, str); fflush(stdout)
-
-/* write(1, str, strlen(str)); */
-/* write(1, END_SEQ, 1) */
 
 #endif /* !COLOR_H_ */
